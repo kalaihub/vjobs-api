@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS vj__companies;
+
+CREATE TABLE IF NOT EXISTS vj__companies (
+  id BIGSERIAL CONSTRAINT pk_company PRIMARY KEY,
+  name VARCHAR(25) NOT NULL,
+  link_home VARCHAR(250) NOT NULL,
+  link_careers VARCHAR(250) NOT NULL,
+  is_active BOOLEAN NOT NULL,
+  email VARCHAR(50) NOT NULL
+);
